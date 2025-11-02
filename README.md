@@ -147,6 +147,8 @@ An automation tool for managing files in Google Drive and updating Google Sheets
 
 The Colab version is simpler to use as it handles authentication automatically through your Google account.
 
+**🔒 Security Note:** When you run this notebook, Google will request permission to access your Google Drive. This access is necessary for the tool to search for files and create/manage Google Sheets. All processing happens through Google's secure authentication system, and the code only accesses files it needs to perform the specified operations. Your data remains private and secure—nothing is shared externally or stored outside of your Google account.
+
 **Usage:**
 1. Open `script collab.ipynb` in [Google Colab](https://colab.research.google.com/)
 2. Click "Runtime" → "Run all" or run cells individually
@@ -166,6 +168,8 @@ The Colab version is simpler to use as it handles authentication automatically t
 ### 💻 Python Version (Local)
 
 For users who prefer running the script locally or need more customization.
+
+**🔒 Security Note:** This script requires Google Drive API access through a service account. The service account credentials you create will only have access to the specific Google Drive folders and files you grant permission to. All operations run locally on your machine, and no data is sent to external servers except for necessary Google API calls to access your own Drive files.
 
 #### Requirements
 
